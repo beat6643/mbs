@@ -1,0 +1,29 @@
+{
+    "create_time": "2023-12-01T01:47:48.248389+00:00",
+    "custom_function_id": "b3f397c62a31ef81748c996251f4e8d6893258f2",
+    "description": "This custom function will remove the domain name from the FQDN of the device",
+    "draft_mode": false,
+    "inputs": [
+        {
+            "contains_type": [
+                "*"
+            ],
+            "description": "FQDN of the device",
+            "input_type": "item",
+            "name": "fqdn",
+            "placeholder": "FQDN of the device"
+        }
+    ],
+    "outputs": [
+        {
+            "contains_type": [
+                "*"
+            ],
+            "data_path": "host_name",
+            "description": "Host Name"
+        }
+    ],
+    "outputs_type": "item",
+    "platform_version": "5.1.0.70187",
+    "python_version": "3"
+}
