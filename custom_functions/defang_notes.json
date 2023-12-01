@@ -1,0 +1,37 @@
+{
+    "create_time": "2023-12-01T01:46:06.932052+00:00",
+    "custom_function_id": "91a0bca3c2457e9cabf43be4f318fbb2ac436027",
+    "description": "",
+    "draft_mode": false,
+    "inputs": [
+        {
+            "contains_type": [],
+            "description": "",
+            "input_type": "list",
+            "name": "note_title_list",
+            "placeholder": ""
+        },
+        {
+            "contains_type": [],
+            "description": "",
+            "input_type": "list",
+            "name": "note_content_list",
+            "placeholder": ""
+        }
+    ],
+    "outputs": [
+        {
+            "contains_type": [],
+            "data_path": "content.*.item",
+            "description": ""
+        },
+        {
+            "contains_type": [],
+            "data_path": "title.*.item",
+            "description": ""
+        }
+    ],
+    "outputs_type": "item",
+    "platform_version": "4.10.4.56260",
+    "python_version": "3"
+}
