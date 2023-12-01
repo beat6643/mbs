@@ -1,0 +1,52 @@
+{
+    "create_time": "2023-12-01T01:46:44.371179+00:00",
+    "custom_function_id": "5e63c03e09b71357340196b45cf20515e5397cfb",
+    "description": "The custom function formats the IOC json results from crowdstrike into a list",
+    "draft_mode": false,
+    "inputs": [
+        {
+            "contains_type": [],
+            "description": "",
+            "input_type": "item",
+            "name": "crowdstrike_parsed_response_body",
+            "placeholder": ""
+        }
+    ],
+    "outputs": [
+        {
+            "contains_type": [
+                ""
+            ],
+            "data_path": "last_updated",
+            "description": "last updated time"
+        },
+        {
+            "contains_type": [],
+            "data_path": "actors",
+            "description": ""
+        },
+        {
+            "contains_type": [],
+            "data_path": "malicious_confidence",
+            "description": ""
+        },
+        {
+            "contains_type": [],
+            "data_path": "malware_family",
+            "description": ""
+        },
+        {
+            "contains_type": [],
+            "data_path": "reports",
+            "description": ""
+        },
+        {
+            "contains_type": [],
+            "data_path": "results",
+            "description": ""
+        }
+    ],
+    "outputs_type": "item",
+    "platform_version": "5.1.0.70187",
+    "python_version": "3"
+}
