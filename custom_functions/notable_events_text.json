@@ -1,0 +1,34 @@
+{
+    "create_time": "2023-12-01T01:48:02.287997+00:00",
+    "custom_function_id": "7b7c163eef2336aaf54a91d784a435250f17d7b9",
+    "description": "",
+    "draft_mode": false,
+    "inputs": [
+        {
+            "contains_type": [
+                "*"
+            ],
+            "description": "",
+            "input_type": "list",
+            "name": "artifact_cef_list",
+            "placeholder": "artifact:*.cef"
+        },
+        {
+            "contains_type": [],
+            "description": "comma separated field names",
+            "input_type": "item",
+            "name": "exclude_field_list",
+            "placeholder": "field1, field2"
+        }
+    ],
+    "outputs": [
+        {
+            "contains_type": [],
+            "data_path": "exclude_field_text",
+            "description": ""
+        }
+    ],
+    "outputs_type": "item",
+    "platform_version": "6.0.0.114895",
+    "python_version": "3"
+}
