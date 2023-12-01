@@ -1,0 +1,32 @@
+{
+    "create_time": "2023-12-01T01:45:30.692314+00:00",
+    "custom_function_id": "85eb0c982c3eb9653c9a6fb4f47e1be29afd141e",
+    "description": "",
+    "draft_mode": false,
+    "inputs": [
+        {
+            "contains_type": [],
+            "description": "",
+            "input_type": "item",
+            "name": "input_to_multiply",
+            "placeholder": ""
+        },
+        {
+            "contains_type": [],
+            "description": "",
+            "input_type": "list",
+            "name": "input_list",
+            "placeholder": ""
+        }
+    ],
+    "outputs": [
+        {
+            "contains_type": [],
+            "data_path": "multiplied_output.*.item",
+            "description": ""
+        }
+    ],
+    "outputs_type": "item",
+    "platform_version": "4.10.3.51237",
+    "python_version": "3"
+}
