@@ -1,0 +1,43 @@
+{
+    "create_time": "2023-12-01T01:43:41.722523+00:00",
+    "custom_function_id": "35795d06968195c36c92507907a75bbd2e71033e",
+    "description": "Filter a list of values based on full or partial match with values in a custom list. The output will be a list of strings which has a partial match against the values in the custom list.",
+    "draft_mode": false,
+    "inputs": [
+        {
+            "contains_type": [
+                "*"
+            ],
+            "description": "Example: requestURLs",
+            "input_type": "list",
+            "name": "value_list",
+            "placeholder": ""
+        },
+        {
+            "contains_type": [
+                "*"
+            ],
+            "description": "",
+            "input_type": "item",
+            "name": "custom_list_name",
+            "placeholder": ""
+        }
+    ],
+    "outputs": [
+        {
+            "contains_type": [
+                "*"
+            ],
+            "data_path": "match_list.*.item",
+            "description": ""
+        },
+        {
+            "contains_type": [],
+            "data_path": "non_match_list.*.item",
+            "description": ""
+        }
+    ],
+    "outputs_type": "item",
+    "platform_version": "4.10.4.56260",
+    "python_version": "3"
+}
