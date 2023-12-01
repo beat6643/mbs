@@ -1,0 +1,52 @@
+{
+    "create_time": "2023-12-01T01:45:48.204577+00:00",
+    "custom_function_id": "51709274ede95e640e67b1b68d5854bd9494cf9d",
+    "description": "",
+    "draft_mode": false,
+    "inputs": [
+        {
+            "contains_type": [],
+            "description": "",
+            "input_type": "list",
+            "name": "action_result_data_list",
+            "placeholder": ""
+        },
+        {
+            "contains_type": [],
+            "description": "",
+            "input_type": "item",
+            "name": "input_to_multiply",
+            "placeholder": ""
+        }
+    ],
+    "outputs": [
+        {
+            "contains_type": [],
+            "data_path": "filtered_action_result.*.parameter",
+            "description": ""
+        },
+        {
+            "contains_type": [],
+            "data_path": "filtered_action_result.*.app_name",
+            "description": ""
+        },
+        {
+            "contains_type": [],
+            "data_path": "filtered_action_result.*.action_name",
+            "description": ""
+        },
+        {
+            "contains_type": [],
+            "data_path": "action_result_count",
+            "description": ""
+        },
+        {
+            "contains_type": [],
+            "data_path": "multiplied_input.*.item",
+            "description": ""
+        }
+    ],
+    "outputs_type": "item",
+    "platform_version": "5.1.0.70187",
+    "python_version": "3"
+}
