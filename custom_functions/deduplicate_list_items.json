@@ -1,0 +1,155 @@
+{
+    "create_time": "2023-12-01T01:47:01.072447+00:00",
+    "custom_function_id": "b2b472bb89210e0ea7a329e499c3cd89f87695e7",
+    "description": "Merge 2-10 different data paths into a single output data path. For example, if IP addresses are stored in the fields sourceAddress, destinationAddress, and deviceAddress, then those three fields could be merged together to form a single list of IP addresses.",
+    "draft_mode": false,
+    "inputs": [
+        {
+            "contains_type": [
+                "*"
+            ],
+            "description": "",
+            "input_type": "list",
+            "name": "input_list_1",
+            "placeholder": ""
+        },
+        {
+            "contains_type": [
+                "*"
+            ],
+            "description": "",
+            "input_type": "list",
+            "name": "input_list_2",
+            "placeholder": ""
+        },
+        {
+            "contains_type": [
+                "*"
+            ],
+            "description": "",
+            "input_type": "list",
+            "name": "input_list_3",
+            "placeholder": ""
+        },
+        {
+            "contains_type": [
+                "*"
+            ],
+            "description": "",
+            "input_type": "list",
+            "name": "input_list_4",
+            "placeholder": ""
+        },
+        {
+            "contains_type": [
+                "*"
+            ],
+            "description": "",
+            "input_type": "list",
+            "name": "input_list_5",
+            "placeholder": ""
+        },
+        {
+            "contains_type": [
+                "*"
+            ],
+            "description": "",
+            "input_type": "list",
+            "name": "input_list_6",
+            "placeholder": ""
+        },
+        {
+            "contains_type": [
+                "*"
+            ],
+            "description": "",
+            "input_type": "list",
+            "name": "input_list_7",
+            "placeholder": ""
+        },
+        {
+            "contains_type": [
+                "*"
+            ],
+            "description": "",
+            "input_type": "list",
+            "name": "input_list_8",
+            "placeholder": ""
+        },
+        {
+            "contains_type": [
+                "*"
+            ],
+            "description": "",
+            "input_type": "list",
+            "name": "input_list_9",
+            "placeholder": ""
+        },
+        {
+            "contains_type": [
+                "*"
+            ],
+            "description": "",
+            "input_type": "list",
+            "name": "input_list_10",
+            "placeholder": ""
+        }
+    ],
+    "outputs": [
+        {
+            "contains_type": [
+                "*"
+            ],
+            "data_path": "output_list_1.*.item",
+            "description": "A combined list of all the values from all the input lists with duplicate eliminated."
+        },
+        {
+            "contains_type": [],
+            "data_path": "output_list_2.*.item",
+            "description": ""
+        },
+        {
+            "contains_type": [],
+            "data_path": "output_list_3.*.item",
+            "description": ""
+        },
+        {
+            "contains_type": [],
+            "data_path": "output_list_4.*.item",
+            "description": ""
+        },
+        {
+            "contains_type": [],
+            "data_path": "output_list_5.*.item",
+            "description": ""
+        },
+        {
+            "contains_type": [],
+            "data_path": "output_list_6.*.item",
+            "description": ""
+        },
+        {
+            "contains_type": [],
+            "data_path": "output_list_7.*.item",
+            "description": ""
+        },
+        {
+            "contains_type": [],
+            "data_path": "output_list_8.*.item",
+            "description": ""
+        },
+        {
+            "contains_type": [],
+            "data_path": "output_list_9.*.item",
+            "description": ""
+        },
+        {
+            "contains_type": [],
+            "data_path": "output_list_10.*.item",
+            "description": ""
+        }
+    ],
+    "outputs_type": "item",
+    "platform_version": "4.10.4.56260",
+    "python_version": "3"
+}
