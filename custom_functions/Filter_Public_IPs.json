@@ -1,0 +1,34 @@
+{
+    "create_time": "2023-12-01T01:44:29.069181+00:00",
+    "custom_function_id": "a2abba5fc2c3d39efbfcf22eea37c78b104ca602",
+    "description": "",
+    "draft_mode": false,
+    "inputs": [
+        {
+            "contains_type": [
+                "ip"
+            ],
+            "description": "",
+            "input_type": "list",
+            "name": "sourceAddress",
+            "placeholder": "sourceAddress"
+        },
+        {
+            "contains_type": [],
+            "description": "",
+            "input_type": "list",
+            "name": "destinationAddress",
+            "placeholder": "destinationAddress"
+        }
+    ],
+    "outputs": [
+        {
+            "contains_type": [],
+            "data_path": "public_ip_list.*.item",
+            "description": "List of public IPs filtered from the input sourceAddresses"
+        }
+    ],
+    "outputs_type": "item",
+    "platform_version": "4.10.4.56260",
+    "python_version": "3"
+}
