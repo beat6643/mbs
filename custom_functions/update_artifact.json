@@ -1,0 +1,30 @@
+{
+    "create_time": "2023-12-01T01:46:25.362198+00:00",
+    "custom_function_id": "4e9b7d35825589ed24df56aa82ae125aaee83b53",
+    "description": "Update existing Artifact",
+    "draft_mode": false,
+    "inputs": [
+        {
+            "contains_type": [
+                "phantom artifact id"
+            ],
+            "description": "",
+            "input_type": "list",
+            "name": "artifact_id_list",
+            "placeholder": "artifact.*.id"
+        },
+        {
+            "contains_type": [
+                "*"
+            ],
+            "description": "Don't expand the list if input is passed from a format block.",
+            "input_type": "list",
+            "name": "new_cef_json_list",
+            "placeholder": "format_3:formatted_data"
+        }
+    ],
+    "outputs": [],
+    "outputs_type": "item",
+    "platform_version": "4.10.4.56260",
+    "python_version": "3"
+}
