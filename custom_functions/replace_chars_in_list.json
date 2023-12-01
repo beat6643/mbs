@@ -1,0 +1,47 @@
+{
+    "create_time": "2023-12-01T01:44:42.685400+00:00",
+    "custom_function_id": "3130c1c527b8a9c16fee8f8560f8393d1ea4b17a",
+    "description": "Replace certain chars in a list of strings with another char or sub string",
+    "draft_mode": false,
+    "inputs": [
+        {
+            "contains_type": [
+                "*"
+            ],
+            "description": "",
+            "input_type": "list",
+            "name": "input_string_list",
+            "placeholder": ""
+        },
+        {
+            "contains_type": [
+                "*"
+            ],
+            "description": "",
+            "input_type": "item",
+            "name": "sub_string_to_be_replaced",
+            "placeholder": "."
+        },
+        {
+            "contains_type": [
+                "*"
+            ],
+            "description": "",
+            "input_type": "item",
+            "name": "replace_substring",
+            "placeholder": "[.]"
+        }
+    ],
+    "outputs": [
+        {
+            "contains_type": [
+                "*"
+            ],
+            "data_path": "output_string_list.*.item",
+            "description": ""
+        }
+    ],
+    "outputs_type": "item",
+    "platform_version": "4.10.4.56260",
+    "python_version": "3"
+}
