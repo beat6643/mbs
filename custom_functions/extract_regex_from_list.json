@@ -1,0 +1,59 @@
+{
+    "create_time": "2023-12-01T01:47:14.691169+00:00",
+    "custom_function_id": "28e6431e0a3760de5d76e615a3c929a39cdf399c",
+    "description": "Extract regex patterns from input list and pass them as an output list. The output of this custom function would be a list of strings.",
+    "draft_mode": false,
+    "inputs": [
+        {
+            "contains_type": [
+                "*"
+            ],
+            "description": "",
+            "input_type": "list",
+            "name": "input_list",
+            "placeholder": "requestURL, sourceAddress etc."
+        },
+        {
+            "contains_type": [
+                "*"
+            ],
+            "description": "",
+            "input_type": "item",
+            "name": "regex_pattern",
+            "placeholder": "regex pattern as a string"
+        },
+        {
+            "contains_type": [
+                "*"
+            ],
+            "description": "0=drop input artifact if a regex match was not found for that artifact.\n1=Pass the input IOC in the output if a regex match was not found.\n\nAn artifact will be dropped from passing on as output if this field is left empty and there is no regex match found.",
+            "input_type": "item",
+            "name": "drop_or_pass_input_ioc",
+            "placeholder": "0/1"
+        },
+        {
+            "contains_type": [],
+            "description": "This will work only if the input list has one item in it. Default = false",
+            "input_type": "item",
+            "name": "output_as_string",
+            "placeholder": "true/false"
+        }
+    ],
+    "outputs": [
+        {
+            "contains_type": [
+                "*"
+            ],
+            "data_path": "output.*.item",
+            "description": ""
+        },
+        {
+            "contains_type": [],
+            "data_path": "output_item",
+            "description": ""
+        }
+    ],
+    "outputs_type": "item",
+    "platform_version": "4.10.4.56260",
+    "python_version": "3"
+}
