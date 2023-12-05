@@ -237,7 +237,7 @@
                     "targetPort": "7_in"
                 }
             ],
-            "hash": "bbcaed995039381b26284dd0312a9139ec7ad1a4",
+            "hash": "c13e82a74ec199a2644e85508e374ab0bbc8e137",
             "nodes": {
                 "0": {
                     "data": {
@@ -315,7 +315,7 @@
                         "action": "update event",
                         "actionType": "generic",
                         "advanced": {
-                            "customName": "Splunk_Update_Notable_Comment_Notes",
+                            "customName": "splunk_update_notable_comment_notes",
                             "customNameId": 0,
                             "join": [],
                             "scope": "all"
@@ -327,11 +327,11 @@
                         "connectorId": "91883aa8-9c81-470b-97a1-5d8f7995f560",
                         "connectorVersion": "v1",
                         "functionId": 1,
-                        "functionName": "Splunk_Update_Notable_Comment_Notes",
+                        "functionName": "splunk_update_notable_comment_notes",
                         "id": "11",
                         "parameters": {
-                            "comment": "FB_Format_Container_Notes:formatted_data.*",
-                            "event_ids": "filtered-data:FL_Event_ID_:condition_1:artifact:*.cef.event_id",
+                            "comment": "fb_format_container_notes:formatted_data.*",
+                            "event_ids": "filtered-data:fl_event_id_:condition_1:artifact:*.cef.event_id",
                             "integer_status": "",
                             "owner": "",
                             "status": "",
@@ -358,7 +358,7 @@
                         "action": "add comment",
                         "actionType": "generic",
                         "advanced": {
-                            "customName": "SNOW_Update_SNOW_Ticket_Comment",
+                            "customName": "snow_update_snow_ticket_comment",
                             "customNameId": 0,
                             "join": [],
                             "scope": "all"
@@ -1207,7 +1207,7 @@
                     "type": "filter",
                     "warnings": {},
                     "x": 480,
-                    "y": 1132
+                    "y": 1140
                 }
             },
             "notes": "It looks for the below tags in container to execute a particular actions.\n\nUpdate SIR ticket comment= if pending_sir_update is present in the container tags.\n\nUpdate notable event comment= if pending_notable_update is present in the container tags."
@@ -1219,7 +1219,7 @@
         "schema": "5.0.10",
         "version": "6.1.1.211"
     },
-    "create_time": "2023-12-05T09:08:10.143068+00:00",
+    "create_time": "2023-12-05T09:09:26.351272+00:00",
     "draft_mode": false,
     "labels": [
         "*"

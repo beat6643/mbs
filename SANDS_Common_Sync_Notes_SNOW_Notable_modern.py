@@ -272,7 +272,7 @@ def splunk_update_notable_comment_notes(action=None, success=None, container=Non
 
     # phantom.debug('Action: {0} {1}'.format(action['name'], ('SUCCEEDED' if success else 'FAILED')))
 
-    filtered_artifact_0_data_fl_event_id_ = phantom.collect2(container=container, datapath=["filtered-data:FL_Event_ID_:condition_1:artifact:*.cef.event_id","filtered-data:fl_event_id_:condition_1:artifact:*.id"], scope="all")
+    filtered_artifact_0_data_fl_event_id_ = phantom.collect2(container=container, datapath=["filtered-data:fl_event_id_:condition_1:artifact:*.cef.event_id","filtered-data:fl_event_id_:condition_1:artifact:*.id"], scope="all")
     fb_format_container_notes__as_list = phantom.get_format_data(name="fb_format_container_notes__as_list")
 
     parameters = []
@@ -433,14 +433,7 @@ def api_add_comment_no_notes(action=None, success=None, container=None, results=
 def join_fl_notable_event_id_artifact(action=None, success=None, container=None, results=None, handle=None, filtered_artifacts=None, filtered_results=None, custom_function=None, **kwargs):
     phantom.debug("join_fl_notable_event_id_artifact() called")
 
-    # if the joined function has already been called, do nothing
-    if phantom.get_run_data(key="join_fl_notable_event_id_artifact_called"):
-        return
-
-    if phantom.completed(custom_function_names=["cf_mbs_defang_notes_1"], action_names=["snow_update_snow_ticket_comment", "http_get_container_notes"]):
-        # save the state that the joined function has now been called
-        phantom.save_run_data(key="join_fl_notable_event_id_artifact_called", value="fl_notable_event_id_artifact")
-
+    if phantom.completed(custom_function_names=["cf_mbs_defang_notes_1"], action_names=["splunk_update_notable_comment_notes", "snow_update_snow_ticket_comment", "http_get_container_notes"]):
         # call connected block "fl_notable_event_id_artifact"
         fl_notable_event_id_artifact(container=container, handle=handle)
 
