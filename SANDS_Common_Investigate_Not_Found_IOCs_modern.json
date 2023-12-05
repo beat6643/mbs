@@ -425,7 +425,7 @@
                                     "task_id",
                                     "trace"
                                 ],
-                                "content": "FB_Failed_Actions_Note:formatted_data",
+                                "content": "fb_failed_actions_note:formatted_data",
                                 "note_format": "html",
                                 "title": "Failed Actions List"
                             }
@@ -437,7 +437,7 @@
                     "type": "utility",
                     "warnings": {},
                     "x": 0,
-                    "y": 1624
+                    "y": 1620
                 },
                 "5": {
                     "data": {
