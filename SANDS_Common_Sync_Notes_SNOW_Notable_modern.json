@@ -1006,7 +1006,7 @@
                 "6": {
                     "data": {
                         "advanced": {
-                            "customName": "DB_Non_Null_Note_Contents",
+                            "customName": "db_non_null_note_contents",
                             "customNameId": 0,
                             "join": []
                         },
@@ -1041,7 +1041,7 @@
                             }
                         ],
                         "functionId": 1,
-                        "functionName": "DB_Non_Null_Note_Contents",
+                        "functionName": "db_non_null_note_contents",
                         "id": "6",
                         "type": "decision"
                     },
