@@ -237,7 +237,7 @@
                     "targetPort": "7_in"
                 }
             ],
-            "hash": "e2d551526f4da563145cf94c8f3caacf31dffef3",
+            "hash": "53f7fbddfaf78302518a81559221afc726543a01",
             "nodes": {
                 "0": {
                     "data": {
@@ -794,7 +794,7 @@
                         "action": "update event",
                         "actionType": "generic",
                         "advanced": {
-                            "customName": "SPLUNK_Close_Notable_Event",
+                            "customName": "splunk_close_notable_event",
                             "customNameId": 0,
                             "join": []
                         },
@@ -805,11 +805,11 @@
                         "connectorId": "91883aa8-9c81-470b-97a1-5d8f7995f560",
                         "connectorVersion": "v1",
                         "functionId": 3,
-                        "functionName": "SPLUNK_Close_Notable_Event",
+                        "functionName": "splunk_close_notable_event",
                         "id": "20",
                         "parameters": {
-                            "comment": "FB_Final_Message:formatted_data",
-                            "event_ids": "filtered-data:FL_Notable_Event_ID_Artifact:condition_1:artifact:*.cef.event_id",
+                            "comment": "fb_final_message:formatted_data",
+                            "event_ids": "filtered-data:fl_notable_event_id_artifact:condition_1:artifact:*.cef.event_id",
                             "integer_status": "5",
                             "owner": "",
                             "status": "",
@@ -836,7 +836,7 @@
                         "action": "update event",
                         "actionType": "generic",
                         "advanced": {
-                            "customName": "SPLUNK_Needs_Review_Notable_Event",
+                            "customName": "splunk_needs_review_notable_event",
                             "customNameId": 0,
                             "join": []
                         },
@@ -847,11 +847,11 @@
                         "connectorId": "91883aa8-9c81-470b-97a1-5d8f7995f560",
                         "connectorVersion": "v1",
                         "functionId": 2,
-                        "functionName": "SPLUNK_Needs_Review_Notable_Event",
+                        "functionName": "splunk_needs_review_notable_event",
                         "id": "21",
                         "parameters": {
-                            "comment": "FB_Final_Message:formatted_data",
-                            "event_ids": "filtered-data:FL_Notable_Event_ID_Artifact:condition_1:artifact:*.cef.event_id",
+                            "comment": "fb_final_message:formatted_data",
+                            "event_ids": "filtered-data:fl_notable_event_id_artifact:condition_1:artifact:*.cef.event_id",
                             "integer_status": "7",
                             "owner": "",
                             "status": "",
@@ -1219,7 +1219,7 @@
         "schema": "5.0.10",
         "version": "6.1.1.211"
     },
-    "create_time": "2023-12-05T09:09:26.351272+00:00",
+    "create_time": "2023-12-05T09:12:32.454039+00:00",
     "draft_mode": false,
     "labels": [
         "*"

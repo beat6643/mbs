@@ -522,7 +522,7 @@ def splunk_close_notable_event(action=None, success=None, container=None, result
 
     # phantom.debug('Action: {0} {1}'.format(action['name'], ('SUCCEEDED' if success else 'FAILED')))
 
-    filtered_artifact_0_data_fl_notable_event_id_artifact = phantom.collect2(container=container, datapath=["filtered-data:FL_Notable_Event_ID_Artifact:condition_1:artifact:*.cef.event_id","filtered-data:fl_notable_event_id_artifact:condition_1:artifact:*.id"])
+    filtered_artifact_0_data_fl_notable_event_id_artifact = phantom.collect2(container=container, datapath=["filtered-data:fl_notable_event_id_artifact:condition_1:artifact:*.cef.event_id","filtered-data:fl_notable_event_id_artifact:condition_1:artifact:*.id"])
     fb_final_message = phantom.get_format_data(name="fb_final_message")
 
     parameters = []
@@ -562,7 +562,7 @@ def splunk_needs_review_notable_event(action=None, success=None, container=None,
 
     # phantom.debug('Action: {0} {1}'.format(action['name'], ('SUCCEEDED' if success else 'FAILED')))
 
-    filtered_artifact_0_data_fl_notable_event_id_artifact = phantom.collect2(container=container, datapath=["filtered-data:FL_Notable_Event_ID_Artifact:condition_1:artifact:*.cef.event_id","filtered-data:fl_notable_event_id_artifact:condition_1:artifact:*.id"])
+    filtered_artifact_0_data_fl_notable_event_id_artifact = phantom.collect2(container=container, datapath=["filtered-data:fl_notable_event_id_artifact:condition_1:artifact:*.cef.event_id","filtered-data:fl_notable_event_id_artifact:condition_1:artifact:*.id"])
     fb_final_message = phantom.get_format_data(name="fb_final_message")
 
     parameters = []
