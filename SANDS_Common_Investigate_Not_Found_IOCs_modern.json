@@ -110,7 +110,7 @@
                     "type": "start",
                     "warnings": {},
                     "x": 20,
-                    "y": -1.1368683772161603e-13
+                    "y": -1.7053025658242404e-13
                 },
                 "1": {
                     "data": {
@@ -180,9 +180,9 @@
                                 "input_to_multiply": "container:id"
                             },
                             "string_split": {
-                                "delimiter": ",",
+                                "delimiter": null,
                                 "input_string": "fb_action_result_messages:formatted_data",
-                                "strip_whitespace": "True"
+                                "strip_whitespace": null
                             }
                         }
                     },
@@ -254,7 +254,7 @@
                     "type": "utility",
                     "userCode": "    # Write your custom code here...",
                     "warnings": {},
-                    "x": -1.4210854715202004e-14,
+                    "x": 0,
                     "y": 1120
                 },
                 "2": {
@@ -303,7 +303,7 @@
                 "3": {
                     "data": {
                         "advanced": {
-                            "customName": "DB_Non_Null_Action_Result",
+                            "customName": "db_non_null_action_result",
                             "customNameId": 0,
                             "join": []
                         },
@@ -333,7 +333,7 @@
                     "type": "decision",
                     "warnings": {},
                     "x": 80,
-                    "y": 936
+                    "y": 940
                 },
                 "4": {
                     "data": {
@@ -442,7 +442,7 @@
                 "5": {
                     "data": {
                         "advanced": {
-                            "customName": "DB_Is_Action_Result_Non_Empty",
+                            "customName": "db_is_action_result_non_empty",
                             "customNameId": 0,
                             "join": []
                         },
@@ -504,7 +504,7 @@
                 "7": {
                     "data": {
                         "advanced": {
-                            "customName": "FB_Action_Result_Messages",
+                            "customName": "fb_action_result_messages",
                             "customNameId": 0,
                             "description": "",
                             "join": [],
@@ -523,8 +523,8 @@
                     "id": "7",
                     "type": "format",
                     "warnings": {},
-                    "x": -1.4210854715202004e-14,
-                    "y": 139.99999999999994
+                    "x": 0,
+                    "y": 140
                 },
                 "8": {
                     "data": {
