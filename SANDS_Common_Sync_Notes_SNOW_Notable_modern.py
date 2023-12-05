@@ -313,7 +313,7 @@ def snow_update_snow_ticket_comment(action=None, success=None, container=None, r
 
     # phantom.debug('Action: {0} {1}'.format(action['name'], ('SUCCEEDED' if success else 'FAILED')))
 
-    filtered_artifact_0_data_fl_snow_ticket_number_artifact = phantom.collect2(container=container, datapath=["filtered-data:FL_snow_ticket_number_Artifact:condition_1:artifact:*.cef.snow_ticket_number","filtered-data:fl_snow_ticket_number_artifact:condition_1:artifact:*.id"], scope="all")
+    filtered_artifact_0_data_fl_snow_ticket_number_artifact = phantom.collect2(container=container, datapath=["filtered-data:fl_snow_ticket_number_artifact:condition_1:artifact:*.cef.snow_ticket_number","filtered-data:fl_snow_ticket_number_artifact:condition_1:artifact:*.id"], scope="all")
     fb_format_container_notes__as_list = phantom.get_format_data(name="fb_format_container_notes__as_list")
 
     parameters = []

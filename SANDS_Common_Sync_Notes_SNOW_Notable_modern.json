@@ -237,7 +237,7 @@
                     "targetPort": "7_in"
                 }
             ],
-            "hash": "e2d551526f4da563145cf94c8f3caacf31dffef3",
+            "hash": "bbcaed995039381b26284dd0312a9139ec7ad1a4",
             "nodes": {
                 "0": {
                     "data": {
@@ -370,11 +370,11 @@
                         "connectorId": "a590c3bc-ca41-4a0e-b063-8066ca868794",
                         "connectorVersion": "v1",
                         "functionId": 1,
-                        "functionName": "SNOW_Update_SNOW_Ticket_Comment",
+                        "functionName": "snow_update_snow_ticket_comment",
                         "id": "12",
                         "parameters": {
-                            "comment": "FB_Format_Container_Notes:formatted_data.*",
-                            "id": "filtered-data:FL_snow_ticket_number_Artifact:condition_1:artifact:*.cef.snow_ticket_number",
+                            "comment": "fb_format_container_notes:formatted_data.*",
+                            "id": "filtered-data:fl_snow_ticket_number_artifact:condition_1:artifact:*.cef.snow_ticket_number",
                             "is_sys_id": "",
                             "table_name": "incident"
                         },
@@ -920,6 +920,14 @@
                         },
                         "utilityType": "custom_function",
                         "values": {
+                            "comment": {
+                                "_internal": [
+                                    "container",
+                                    "author",
+                                    "trace"
+                                ],
+                                "comment": "There are no notes to update notable event with."
+                            },
                             "defang_notes": {
                                 "note_content_list": "http_get_container_notes:action_result.data.*.response_body.data.*.content",
                                 "note_title_list": "http_get_container_notes:action_result.data.*.response_body.data.*.title"
@@ -1123,7 +1131,7 @@
                 "8": {
                     "data": {
                         "advanced": {
-                            "customName": "FL_Notable_Event_ID",
+                            "customName": "fl_notable_event_id",
                             "customNameId": 0,
                             "join": []
                         },
@@ -1148,7 +1156,7 @@
                             }
                         ],
                         "functionId": 3,
-                        "functionName": "FL_Notable_Event_ID",
+                        "functionName": "fl_notable_event_id",
                         "id": "8",
                         "type": "filter"
                     },
@@ -1211,7 +1219,7 @@
         "schema": "5.0.10",
         "version": "6.1.1.211"
     },
-    "create_time": "2023-12-05T02:58:36.794827+00:00",
+    "create_time": "2023-12-05T09:08:10.143068+00:00",
     "draft_mode": false,
     "labels": [
         "*"
