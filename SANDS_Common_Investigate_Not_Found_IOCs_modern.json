@@ -1,0 +1,648 @@
+{
+    "blockly": false,
+    "blockly_xml": "<xml></xml>",
+    "category": "Common",
+    "coa": {
+        "data": {
+            "description": "This playbook searches for IOCs that are not found while trying to investigate against a tool such as Virus Total or Threat Crowd and adds them to the note.",
+            "edges": [
+                {
+                    "id": "port_8_to_port_2",
+                    "sourceNode": "8",
+                    "sourcePort": "8_out",
+                    "targetNode": "2",
+                    "targetPort": "2_in"
+                },
+                {
+                    "id": "port_0_to_port_7",
+                    "sourceNode": "0",
+                    "sourcePort": "0_out",
+                    "targetNode": "7",
+                    "targetPort": "7_in"
+                },
+                {
+                    "conditions": [
+                        {
+                            "index": 0
+                        }
+                    ],
+                    "id": "port_5_to_port_6",
+                    "sourceNode": "5",
+                    "sourcePort": "5_out",
+                    "targetNode": "6",
+                    "targetPort": "6_in"
+                },
+                {
+                    "id": "port_6_to_port_4",
+                    "sourceNode": "6",
+                    "sourcePort": "6_out",
+                    "targetNode": "4",
+                    "targetPort": "4_in"
+                },
+                {
+                    "id": "port_4_to_port_1",
+                    "sourceNode": "4",
+                    "sourcePort": "4_out",
+                    "targetNode": "1",
+                    "targetPort": "1_in"
+                },
+                {
+                    "id": "port_9_to_port_10",
+                    "sourceNode": "9",
+                    "sourcePort": "9_out",
+                    "targetNode": "10",
+                    "targetPort": "10_in"
+                },
+                {
+                    "id": "port_10_to_port_8",
+                    "sourceNode": "10",
+                    "sourcePort": "10_out",
+                    "targetNode": "8",
+                    "targetPort": "8_in"
+                },
+                {
+                    "conditions": [
+                        {
+                            "index": 0
+                        }
+                    ],
+                    "id": "port_3_to_port_11",
+                    "sourceNode": "3",
+                    "sourcePort": "3_out",
+                    "targetNode": "11",
+                    "targetPort": "11_in"
+                },
+                {
+                    "id": "port_11_to_port_5",
+                    "sourceNode": "11",
+                    "sourcePort": "11_out",
+                    "targetNode": "5",
+                    "targetPort": "5_in"
+                },
+                {
+                    "id": "port_2_to_port_3",
+                    "sourceNode": "2",
+                    "sourcePort": "2_out",
+                    "targetNode": "3",
+                    "targetPort": "3_in"
+                },
+                {
+                    "id": "port_7_to_port_9",
+                    "sourceNode": "7",
+                    "sourcePort": "7_out",
+                    "targetNode": "9",
+                    "targetPort": "9_in"
+                }
+            ],
+            "hash": "c81fc02a315ba12b75cbd7fca334e95ac4ab7d91",
+            "nodes": {
+                "0": {
+                    "data": {
+                        "advanced": {
+                            "join": []
+                        },
+                        "functionName": "on_start",
+                        "id": "0",
+                        "type": "start"
+                    },
+                    "errors": {},
+                    "id": "0",
+                    "type": "start",
+                    "warnings": {},
+                    "x": 20,
+                    "y": -1.1368683772161603e-13
+                },
+                "1": {
+                    "data": {
+                        "advanced": {
+                            "join": []
+                        },
+                        "functionName": "on_finish",
+                        "id": "1",
+                        "type": "end"
+                    },
+                    "errors": {},
+                    "id": "1",
+                    "type": "end",
+                    "warnings": {},
+                    "x": 20,
+                    "y": 1788
+                },
+                "10": {
+                    "data": {
+                        "advanced": {
+                            "customName": "multiply_input",
+                            "customNameId": 0,
+                            "join": []
+                        },
+                        "customFunction": {
+                            "draftMode": false,
+                            "name": "multiply_input",
+                            "repoName": "mbs"
+                        },
+                        "functionId": 1,
+                        "functionName": "multiply_input",
+                        "id": "10",
+                        "type": "utility",
+                        "utilities": {
+                            "multiply_input": {
+                                "description": "",
+                                "fields": [
+                                    {
+                                        "dataTypes": [],
+                                        "description": "",
+                                        "inputType": "item",
+                                        "label": "input_to_multiply",
+                                        "name": "input_to_multiply",
+                                        "placeholder": "",
+                                        "renderType": "datapath",
+                                        "required": false
+                                    },
+                                    {
+                                        "dataTypes": [],
+                                        "description": "",
+                                        "inputType": "list",
+                                        "label": "input_list",
+                                        "name": "input_list",
+                                        "placeholder": "",
+                                        "renderType": "datapath",
+                                        "required": false
+                                    }
+                                ],
+                                "label": "multiply_input",
+                                "name": "multiply_input"
+                            }
+                        },
+                        "utilityType": "custom_function",
+                        "values": {
+                            "multiply_input": {
+                                "input_list": "cf_mbs_string_split_1:custom_function_result.data.*.item",
+                                "input_to_multiply": "container:id"
+                            },
+                            "string_split": {
+                                "delimiter": ",",
+                                "input_string": "fb_action_result_messages:formatted_data",
+                                "strip_whitespace": "True"
+                            }
+                        }
+                    },
+                    "errors": {},
+                    "id": "10",
+                    "tab": "customFunctions",
+                    "type": "utility",
+                    "userCode": "    # Write your custom code here...",
+                    "warnings": {},
+                    "x": 0,
+                    "y": 460
+                },
+                "11": {
+                    "data": {
+                        "advanced": {
+                            "customName": "cf_mbs_filter_action_result_parameter_2",
+                            "customNameId": 0,
+                            "join": []
+                        },
+                        "customFunction": {
+                            "draftMode": false,
+                            "name": "filter_action_result_parameter",
+                            "repoName": "mbs"
+                        },
+                        "functionId": 2,
+                        "functionName": "cf_mbs_filter_action_result_parameter_2",
+                        "id": "11",
+                        "type": "utility",
+                        "utilities": {
+                            "filter_action_result_parameter": {
+                                "description": "",
+                                "fields": [
+                                    {
+                                        "dataTypes": [],
+                                        "description": "",
+                                        "inputType": "list",
+                                        "label": "action_result_data_list",
+                                        "name": "action_result_data_list",
+                                        "placeholder": "",
+                                        "renderType": "datapath",
+                                        "required": false
+                                    },
+                                    {
+                                        "dataTypes": [],
+                                        "description": "",
+                                        "inputType": "item",
+                                        "label": "input_to_multiply",
+                                        "name": "input_to_multiply",
+                                        "placeholder": "",
+                                        "renderType": "datapath",
+                                        "required": false
+                                    }
+                                ],
+                                "label": "filter_action_result_parameter",
+                                "name": "filter_action_result_parameter"
+                            }
+                        },
+                        "utilityType": "custom_function",
+                        "values": {
+                            "filter_action_result_parameter": {
+                                "action_result_data_list": "http_get_find_ioc_not_found_vt:action_result.data.*.response_body.data",
+                                "input_to_multiply": "container:id"
+                            }
+                        }
+                    },
+                    "errors": {},
+                    "id": "11",
+                    "tab": "customFunctions",
+                    "type": "utility",
+                    "userCode": "    # Write your custom code here...",
+                    "warnings": {},
+                    "x": -1.4210854715202004e-14,
+                    "y": 1120
+                },
+                "2": {
+                    "data": {
+                        "action": "get data",
+                        "actionType": "investigate",
+                        "advanced": {
+                            "customName": "http_get_find_ioc_not_found_vt",
+                            "customNameId": 0,
+                            "delayTime": 0,
+                            "join": []
+                        },
+                        "connector": "HTTP",
+                        "connectorConfigs": [
+                            "http test"
+                        ],
+                        "connectorId": "290b7499-0374-4930-9cdc-5e9b05d65827",
+                        "connectorVersion": "v1",
+                        "functionId": 1,
+                        "functionName": "http_get_find_ioc_not_found_vt",
+                        "id": "2",
+                        "parameters": {
+                            "headers": "",
+                            "location": "fb_rest_find_ioc_not_found_vt:formatted_data.*",
+                            "verify_certificate": "False"
+                        },
+                        "requiredParameters": [
+                            {
+                                "data_type": "string",
+                                "field": "location"
+                            },
+                            {
+                                "data_type": "boolean",
+                                "field": "verify_certificate"
+                            }
+                        ],
+                        "type": "action"
+                    },
+                    "errors": {},
+                    "id": "2",
+                    "type": "action",
+                    "warnings": {},
+                    "x": -1.4210854715202004e-14,
+                    "y": 772
+                },
+                "3": {
+                    "data": {
+                        "advanced": {
+                            "customName": "DB_Non_Null_Action_Result",
+                            "customNameId": 0,
+                            "join": []
+                        },
+                        "conditions": [
+                            {
+                                "comparisons": [
+                                    {
+                                        "conditionIndex": 0,
+                                        "op": "!=",
+                                        "param": "http_get_find_ioc_not_found_vt:action_result.data.*.response_body.data.*.result_data.*.message",
+                                        "value": ""
+                                    }
+                                ],
+                                "conditionIndex": 0,
+                                "display": "If",
+                                "logic": "and",
+                                "type": "if"
+                            }
+                        ],
+                        "functionId": 5,
+                        "functionName": "db_non_null_action_result",
+                        "id": "3",
+                        "type": "decision"
+                    },
+                    "errors": {},
+                    "id": "3",
+                    "type": "decision",
+                    "warnings": {},
+                    "x": 80,
+                    "y": 936
+                },
+                "4": {
+                    "data": {
+                        "advanced": {
+                            "customName": "api_failed_actions_note",
+                            "customNameId": 0,
+                            "join": []
+                        },
+                        "functionId": 8,
+                        "functionName": "api_failed_actions_note",
+                        "id": "4",
+                        "type": "utility",
+                        "utilities": {
+                            "add_note": {
+                                "description": "",
+                                "fields": [
+                                    {
+                                        "description": "",
+                                        "label": "title",
+                                        "name": "title",
+                                        "placeholder": "Enter a note title",
+                                        "renderType": "datapath",
+                                        "required": false
+                                    },
+                                    {
+                                        "description": "",
+                                        "label": "content",
+                                        "name": "content",
+                                        "placeholder": "Enter the note content",
+                                        "renderType": "datapath",
+                                        "required": false
+                                    },
+                                    {
+                                        "choices": [
+                                            "markdown",
+                                            "html"
+                                        ],
+                                        "default": "markdown",
+                                        "description": "",
+                                        "label": "note format",
+                                        "name": "note_format",
+                                        "placeholder": "Enter the note content",
+                                        "renderType": "dropdown",
+                                        "required": false
+                                    },
+                                    {
+                                        "hidden": true,
+                                        "name": "container",
+                                        "required": false
+                                    },
+                                    {
+                                        "default": "general",
+                                        "hidden": true,
+                                        "name": "note_type",
+                                        "required": false
+                                    },
+                                    {
+                                        "hidden": true,
+                                        "name": "author",
+                                        "required": false
+                                    },
+                                    {
+                                        "hidden": true,
+                                        "name": "event_id",
+                                        "required": false
+                                    },
+                                    {
+                                        "hidden": true,
+                                        "name": "task_id",
+                                        "required": false
+                                    },
+                                    {
+                                        "hidden": true,
+                                        "name": "trace",
+                                        "required": false
+                                    }
+                                ],
+                                "label": "add note",
+                                "name": "add_note"
+                            }
+                        },
+                        "values": {
+                            "add_note": {
+                                "_internal": [
+                                    "container",
+                                    "note_type",
+                                    "author",
+                                    "event_id",
+                                    "task_id",
+                                    "trace"
+                                ],
+                                "content": "FB_Failed_Actions_Note:formatted_data",
+                                "note_format": "html",
+                                "title": "Failed Actions List"
+                            }
+                        }
+                    },
+                    "errors": {},
+                    "id": "4",
+                    "tab": "apis",
+                    "type": "utility",
+                    "warnings": {},
+                    "x": 0,
+                    "y": 1624
+                },
+                "5": {
+                    "data": {
+                        "advanced": {
+                            "customName": "DB_Is_Action_Result_Non_Empty",
+                            "customNameId": 0,
+                            "join": []
+                        },
+                        "conditions": [
+                            {
+                                "comparisons": [
+                                    {
+                                        "conditionIndex": 0,
+                                        "op": "!=",
+                                        "param": "cf_mbs_filter_action_result_parameter_2:custom_function_result.data.action_result_count",
+                                        "value": "0"
+                                    }
+                                ],
+                                "conditionIndex": 0,
+                                "display": "If",
+                                "logic": "and",
+                                "type": "if"
+                            }
+                        ],
+                        "functionId": 4,
+                        "functionName": "db_is_action_result_non_empty",
+                        "id": "5",
+                        "type": "decision"
+                    },
+                    "errors": {},
+                    "id": "5",
+                    "type": "decision",
+                    "warnings": {},
+                    "x": 80,
+                    "y": 1280
+                },
+                "6": {
+                    "data": {
+                        "advanced": {
+                            "customName": "fb_failed_actions_note",
+                            "customNameId": 0,
+                            "join": [],
+                            "separator": ", "
+                        },
+                        "functionId": 9,
+                        "functionName": "fb_failed_actions_note",
+                        "id": "6",
+                        "parameters": [
+                            "cf_mbs_filter_action_result_parameter_2:custom_function_result.data.filtered_action_result.*.parameter",
+                            "cf_mbs_filter_action_result_parameter_2:custom_function_result.data.filtered_action_result.*.app_name",
+                            "cf_mbs_filter_action_result_parameter_2:custom_function_result.data.filtered_action_result.*.action_name",
+                            "cf_mbs_filter_action_result_parameter_2:custom_function_result.data.action_result_count"
+                        ],
+                        "template": "{3} actions failed.\n\nBelow are the failed actions which needs attention.\n\n%%\nParameter: {0}\nApp Name: {1}\nAction Name: {2}\n\n%%",
+                        "type": "format"
+                    },
+                    "errors": {},
+                    "id": "6",
+                    "type": "format",
+                    "warnings": {},
+                    "x": 0,
+                    "y": 1460
+                },
+                "7": {
+                    "data": {
+                        "advanced": {
+                            "customName": "FB_Action_Result_Messages",
+                            "customNameId": 0,
+                            "description": "",
+                            "join": [],
+                            "separator": ", "
+                        },
+                        "functionId": 8,
+                        "functionName": "fb_action_result_messages",
+                        "id": "7",
+                        "parameters": [
+                            "container:id"
+                        ],
+                        "template": "failed, No data was returned, not found, notfound, NotFoundError",
+                        "type": "format"
+                    },
+                    "errors": {},
+                    "id": "7",
+                    "type": "format",
+                    "warnings": {},
+                    "x": -1.4210854715202004e-14,
+                    "y": 139.99999999999994
+                },
+                "8": {
+                    "data": {
+                        "advanced": {
+                            "customName": "fb_rest_find_ioc_not_found_vt",
+                            "customNameId": 0,
+                            "drop_none": true,
+                            "join": [],
+                            "scope": "all",
+                            "separator": ", "
+                        },
+                        "functionId": 7,
+                        "functionName": "fb_rest_find_ioc_not_found_vt",
+                        "id": "8",
+                        "parameters": [
+                            "multiply_input:custom_function_result.data.multiplied_output.*.item",
+                            "cf_mbs_string_split_1:custom_function_result.data.*.item"
+                        ],
+                        "template": "%%\n/app_run?_filter_container={0}&_filter_message__icontains=\"{1}\"&_exclude_app_name__in=[\"HTTP\", \"VirusTotal v3\"]&include_expensive&page_size=0\n%%",
+                        "type": "format"
+                    },
+                    "errors": {},
+                    "id": "8",
+                    "type": "format",
+                    "warnings": {},
+                    "x": -1.4210854715202004e-14,
+                    "y": 608
+                },
+                "9": {
+                    "data": {
+                        "advanced": {
+                            "customName": "cf_mbs_string_split_1",
+                            "customNameId": 0,
+                            "join": []
+                        },
+                        "customFunction": {
+                            "draftMode": false,
+                            "name": "string_split",
+                            "repoName": "mbs"
+                        },
+                        "functionId": 1,
+                        "functionName": "cf_mbs_string_split_1",
+                        "id": "9",
+                        "selectMore": false,
+                        "type": "utility",
+                        "utilities": {
+                            "string_split": {
+                                "description": "Return a list of the components of input_string when split using the specified delimiter. If strip_whitespace is not specified or is \"True\", strip all whitespace from the beginning and end of each resulting component.",
+                                "fields": [
+                                    {
+                                        "dataTypes": [
+                                            "*"
+                                        ],
+                                        "description": "The string to split",
+                                        "inputType": "item",
+                                        "label": "input_string",
+                                        "name": "input_string",
+                                        "placeholder": "item_1, item_2, item_3",
+                                        "renderType": "datapath",
+                                        "required": false
+                                    },
+                                    {
+                                        "dataTypes": [],
+                                        "description": "The delimiter to split by, which defaults to a comma",
+                                        "inputType": "item",
+                                        "label": "delimiter",
+                                        "name": "delimiter",
+                                        "placeholder": ",",
+                                        "renderType": "datapath",
+                                        "required": false
+                                    },
+                                    {
+                                        "dataTypes": [],
+                                        "description": "Either True or False to indicate whether or not to remove whitespace before and after each item. Defaults to True",
+                                        "inputType": "item",
+                                        "label": "strip_whitespace",
+                                        "name": "strip_whitespace",
+                                        "placeholder": "True",
+                                        "renderType": "datapath",
+                                        "required": false
+                                    }
+                                ],
+                                "label": "string_split",
+                                "name": "string_split"
+                            }
+                        },
+                        "utilityType": "custom_function",
+                        "values": {
+                            "string_split": {
+                                "delimiter": null,
+                                "input_string": "fb_action_result_messages:formatted_data",
+                                "strip_whitespace": null
+                            }
+                        }
+                    },
+                    "errors": {},
+                    "id": "9",
+                    "tab": "customFunctions",
+                    "type": "utility",
+                    "userCode": "    # Write your custom code here...",
+                    "warnings": {},
+                    "x": 0,
+                    "y": 300
+                }
+            },
+            "notes": "This playbook searches for IOCs that are not found while trying to investigate against a tool such as Virus Total or Threat Crowd and adds them to the note."
+        },
+        "input_spec": null,
+        "output_spec": null,
+        "playbook_type": "automation",
+        "python_version": "3",
+        "schema": "5.0.10",
+        "version": "6.1.1.211"
+    },
+    "create_time": "2023-12-05T02:53:15.059830+00:00",
+    "draft_mode": false,
+    "labels": [
+        "*"
+    ],
+    "tags": []
+}
