@@ -713,7 +713,7 @@
                 "19": {
                     "data": {
                         "advanced": {
-                            "customName": "DB_Notable_Event_Status",
+                            "customName": "db_notable_event_status",
                             "customNameId": 0,
                             "join": [],
                             "notRequiredJoins": [
@@ -753,7 +753,7 @@
                             }
                         ],
                         "functionId": 3,
-                        "functionName": "DB_Notable_Event_Status",
+                        "functionName": "db_notable_event_status",
                         "id": "19",
                         "type": "decision"
                     },
